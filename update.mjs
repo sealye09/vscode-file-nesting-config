@@ -256,8 +256,8 @@ let readme = [
   'SPONSORS*',
 ]
 
-readme = addTitleCaseVariants(readme)
-readme = addLowerCaseVariants(readme)
+// readme = addTitleCaseVariants(readme)
+// readme = addLowerCaseVariants(readme)
 
 const cargo = [
   'cargo.lock',
@@ -476,9 +476,9 @@ const full = sortObject({
   'package.json': stringify(packageJSON),
   'rush.json': stringify(packageJSON),
   'pubspec.yaml': stringify(pubspecYAML),
-  'README*': stringify(readme),
-  'Readme*': stringify(readme),
-  'readme*': stringify(readme),
+  'README.md': stringify(readme),
+  // 'Readme*': stringify(readme),
+  // 'readme*': stringify(readme),
   'Cargo.toml': stringify(cargo),
   'gemfile': stringify(gemfile),
   'go.mod': stringify(gofile),
